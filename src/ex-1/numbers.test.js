@@ -11,6 +11,7 @@ import {
   convertToNegative,
   calculatePercentage,
   checkNumberType,
+  sumDigits,
 } from "./numbers.js";
 
 describe.skip("add", () => {
@@ -33,7 +34,7 @@ describe.skip("formatNumber", () => {
   });
 });
 
-describe("findHighestValue", () => {
+describe.skip("findHighestValue", () => {
   test("should return the highest value in the array", () => {
     expect(findHighestValue([1, 2, 3, 4, 5])).toEqual(5);
     expect(findHighestValue([-1, -2, -3, -4, -5])).toEqual(-1);
@@ -164,5 +165,23 @@ describe.skip("checkNumberType", () => {
   test("should return 'Number has a decimal place.' for numbers with decimal places", () => {
     expect(checkNumberType(3.14)).toEqual("Number has a decimal place.");
     expect(checkNumberType(5.6789)).toEqual("Number has a decimal place.");
+  });
+});
+
+describe("sumDigits", () => {
+  test("should return the sum of the digits of a positive number", () => {
+    expect(sumDigits(123)).toEqual(6);
+    expect(sumDigits(456)).toEqual(15);
+    expect(sumDigits(789)).toEqual(24);
+  });
+
+  test("should return the sum of the digits of a negative number", () => {
+    expect(sumDigits(-123)).toEqual(6);
+    expect(sumDigits(-456)).toEqual(15);
+    expect(sumDigits(-789)).toEqual(24);
+  });
+
+  test("should return 0 for the sum of the digits of 0", () => {
+    expect(sumDigits(0)).toEqual(0);
   });
 });
