@@ -14,7 +14,7 @@ import {
   sumDigits,
 } from "./numbers.js";
 
-describe.skip("add", () => {
+describe("add", () => {
   test("should return the sum of two numbers", () => {
     expect(add(2, 3)).toEqual(5);
     expect(add(-1, 5)).toEqual(4);
@@ -168,7 +168,7 @@ describe.skip("checkNumberType", () => {
   });
 });
 
-describe("sumDigits", () => {
+describe.skip("sumDigits", () => {
   test("should return the sum of the digits of a positive number", () => {
     expect(sumDigits(123)).toEqual(6);
     expect(sumDigits(456)).toEqual(15);

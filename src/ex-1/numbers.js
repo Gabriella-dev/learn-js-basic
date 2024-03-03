@@ -1,5 +1,7 @@
 // 1. create a function that adds two numbers
-export function add(a, b) {}
+export function add(a, b) {
+  return a + b;
+}
 
 // 2.  Write a function to format a number up to specified decimal places. (the input will be jest numbers and decimals, the output will be a string with the number formatted to the specified decimal places.)
 export function formatNumber(number, decimals) {
