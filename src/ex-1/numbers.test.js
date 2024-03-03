@@ -24,7 +24,7 @@ describe("add", () => {
   });
 });
 
-describe.skip("formatNumber", () => {
+describe("formatNumber", () => {
   test("should format the number with the specified decimals", () => {
     expect(formatNumber(3.14159, 2)).toEqual("3.14");
     expect(formatNumber(10, 0)).toEqual("10");
