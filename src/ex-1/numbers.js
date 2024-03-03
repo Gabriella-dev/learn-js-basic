@@ -4,9 +4,7 @@ export function add(a, b) {
 }
 
 // 2.  Write a function to format a number up to specified decimal places. (the input will be jest numbers and decimals, the output will be a string with the number formatted to the specified decimal places.)
-export function formatNumber(number, decimals) {
-  return Number(number).toFixed(decimals);
-}
+export function formatNumber(number, decimals) {}
 
 // 3. Write a function to find the highest value in an array.
 // The input will be an array of numbers.
