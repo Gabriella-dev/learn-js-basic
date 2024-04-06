@@ -146,7 +146,7 @@ describe("convertToNegative", () => {
   });
 });
 
-describe.skip("calculatePercentage", () => {
+describe("calculatePercentage", () => {
   test("should calculate the percentage of a number", () => {
     expect(calculatePercentage(100, 50)).toEqual(50);
     expect(calculatePercentage(200, 25)).toEqual(50);

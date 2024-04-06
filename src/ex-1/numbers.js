@@ -63,7 +63,9 @@ export function convertToNegative(number) {
 // 12. Write a JavaScript function to calculate the percentage (%) of a number.
 // The input will be a number and the percentage.
 // The output will be the percentage of the number.
-export function calculatePercentage(number, percentage) {}
+export function calculatePercentage(number, percentage) {
+  return (number * percentage) / 100;
+}
 
 // 13. Write a JavaScript function to check if a number is a whole number or has a decimal place. if the number is a whole number and "It is a whole number." else "Number has a decimal place."
 // The input will be a number. The output will be a string.
