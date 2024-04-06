@@ -95,7 +95,7 @@ describe("capitalizeFirstLetter", () => {
   });
 });
 
-describe.skip("capitalizeEachWord", () => {
+describe("capitalizeEachWord", () => {
   test("capitalizes each word in a sentence", () => {
     expect(capitalizeEachWord("hello world")).toEqual("Hello World");
     expect(capitalizeEachWord("javascript is awesome")).toEqual(

@@ -38,7 +38,16 @@ export function capitalizeFirstLetter(str) {
 // the function should return the capitalized string.
 // the input string will be a sentence.
 
-export function capitalizeEachWord(str) {}
+export function capitalizeEachWord(str) {
+  const array1 = str.split(" ");
+  const newArray1 = [];
+
+  for (let x = 0; x < array1.length; x++) {
+    newArray1.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+  }
+  return newArray1.join(" ");
+}
+
 
 // 7. Write a JavaScript function to convert a string into camel case.
 // the function should return the camel cased string.
