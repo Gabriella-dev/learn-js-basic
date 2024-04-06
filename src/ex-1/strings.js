@@ -27,7 +27,12 @@ export function isString(input) {
 // 5. Write a JavaScript function to capitalize the first letter of a string.
 // the function should return the capitalized string.
 // the input string will be a single word.
-export function capitalizeFirstLetter(str) {}
+export function capitalizeFirstLetter(str) {
+  // return str && str[0].toUpperCase() + str.slice(1);
+
+  return str && str.replace(/^./, (string) => string.toUpperCase());
+}
+
 
 // 6. Write a JavaScript function to capitalize the first letter of each word in a string.
 // the function should return the capitalized string.

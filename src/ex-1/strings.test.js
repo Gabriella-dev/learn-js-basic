@@ -77,7 +77,7 @@ describe.skip("isString", () => {
   });
 });
 
-describe.skip("capitalizeFirstLetter", () => {
+describe("capitalizeFirstLetter", () => {
   test("capitalizes the first letter of a word", () => {
     expect(capitalizeFirstLetter("hello")).toEqual("Hello");
     expect(capitalizeFirstLetter("world")).toEqual("World");
