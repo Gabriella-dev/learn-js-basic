@@ -156,7 +156,7 @@ describe("calculatePercentage", () => {
   });
 });
 
-describe.skip("checkNumberType", () => {
+describe("checkNumberType", () => {
   test("should return 'It is a whole number.' for whole numbers", () => {
     expect(checkNumberType(1)).toEqual("It is a whole number.");
     expect(checkNumberType(10)).toEqual("It is a whole number.");

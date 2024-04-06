@@ -69,7 +69,11 @@ export function calculatePercentage(number, percentage) {
 
 // 13. Write a JavaScript function to check if a number is a whole number or has a decimal place. if the number is a whole number and "It is a whole number." else "Number has a decimal place."
 // The input will be a number. The output will be a string.
-export function checkNumberType(number) {}
+export function checkNumberType(number) {
+  const num = Math.floor(number) === number;
+
+  return num ? "It is a whole number." : "Number has a decimal place.";
+}
 
 
 // 14. Write a JavaScript function to calculate the sum of digits of a number.
