@@ -11,12 +11,16 @@ export function formatNumber(number, decimals) {
 // 3. Write a function to find the highest value in an array.
 // The input will be an array of numbers.
 // The output will be the highest number in the array.
-export function findHighestValue(array) {}
+export function findHighestValue(array) {
+  return Math.max(...array);
+}
 
 // 4. Write a function to find the lowest value in an array.
 // The input will be an array of numbers.
-// The output will be the highest number in the array.
-export function findLowestValue(array) {}
+// The output will be the lowest number in the array.
+export function findLowestValue(array) {
+  return Math.min(...array);
+}
 
 // 5. Write a function to get the greatest common divisor (GCD) of two integers.
 // the input will be two integers.
@@ -51,11 +55,10 @@ export function calculateNthRoot(number, root) {}
 // The input will be a positive number.
 // The output will be a negative number.
 export function convertToNegative(number) {
-  if (number === 0) {
-    return 0;
-  }
+  if (number === 0) return 0;
   return -Math.abs(number);
 }
+  
 
 // 12. Write a JavaScript function to calculate the percentage (%) of a number.
 // The input will be a number and the percentage.

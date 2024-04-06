@@ -9,13 +9,13 @@ import {
   searchWord,
 } from "./strings.js";
 
-describe.skip("helloWorld", () => {
+describe("helloWorld", () => {
   test("should return hello world", () => {
     expect(helloWorld()).toEqual("hello world");
   });
 });
 
-describe.skip("isBlank", () => {
+describe("isBlank", () => {
   test("returns true for an empty string", () => {
     expect(isBlank("")).toBe(true);
   });

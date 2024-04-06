@@ -12,6 +12,7 @@ import {
   calculatePercentage,
   checkNumberType,
   sumDigits,
+  findLowestValue,
 } from "./numbers.js";
 
 describe("add", () => {
@@ -34,7 +35,7 @@ describe("formatNumber", () => {
   });
 });
 
-describe.skip("findHighestValue", () => {
+describe("findHighestValue", () => {
   test("should return the highest value in the array", () => {
     expect(findHighestValue([1, 2, 3, 4, 5])).toEqual(5);
     expect(findHighestValue([-1, -2, -3, -4, -5])).toEqual(-1);
@@ -44,13 +45,13 @@ describe.skip("findHighestValue", () => {
   });
 });
 
-describe.skip("findLowestValue", () => {
+describe("findLowestValue", () => {
   test("should return the lowest value in the array", () => {
-    expect(findHighestValue([1, 2, 3, 4, 5])).toEqual(1);
-    expect(findHighestValue([-1, -2, -3, -4, -5])).toEqual(-5);
-    expect(findHighestValue([10, 20, 30, 40, 50])).toEqual(10);
-    expect(findHighestValue([0, 0, 0, 0, 0])).toEqual(0);
-    expect(findHighestValue([-10, -20, -30, -40, -50])).toEqual(-50);
+    expect(findLowestValue([1, 2, 3, 4, 5])).toEqual(1);
+    expect(findLowestValue([-1, -2, -3, -4, -5])).toEqual(-5);
+    expect(findLowestValue([10, 20, 30, 40, 50])).toEqual(10);
+    expect(findLowestValue([0, 0, 0, 0, 0])).toEqual(0);
+    expect(findLowestValue([-10, -20, -30, -40, -50])).toEqual(-50);
   });
 });
 
@@ -127,7 +128,7 @@ describe.skip("calculateNthRoot", () => {
   });
 });
 
-describe.skip("convertToNegative", () => {
+describe("convertToNegative", () => {
   test("should convert a positive number to a negative number", () => {
     expect(convertToNegative(5)).toEqual(-5);
     expect(convertToNegative(10)).toEqual(-10);

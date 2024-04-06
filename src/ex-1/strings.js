@@ -1,5 +1,7 @@
 // 1. return hello world
-export function helloWorld() {}
+export function helloWorld() {
+  return "hello world";
+}
 
 /* 2. Write a JavaScript function isBlank(input) that checks whether or not the input String is blank. A blank string is one that contains nothing but whitespace characters.
 The function returns true if the input String is blank, false otherwise. */
