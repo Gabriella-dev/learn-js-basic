@@ -31,7 +31,12 @@ export function getGCD(a, b) {}
 // The input will be a number.
 // The output will be a boolean.
 // Note: Natural numbers are whole numbers from 1 upwards; and sometimes zero is also included.
-export function isNaturalNumber(number) {}
+export function isNaturalNumber(number) {
+  const n = number;
+  n >= 0;
+  if (n != number) return false;
+  return true;
+}
 
 // 7. Write a function to find the factorial of a number.   (The factorial of a number is the product of all the whole numbers from that number down to 1.)
 export function factorial(number) {}

@@ -57,7 +57,17 @@ console.log(camelize("JavaScript Exercises")); => "JavaScriptExercises"
 console.log(camelize("JavaScript exercises")); =>"JavaScriptExercises"
 console.log(camelize("JavaScriptExercises")); => "JavaScriptExercises"*/
 
-export function camelCase(str) {}
+export function camelCase(str) {
+  if (str.length === 0) return "";
+  const splitAndFilterStr = str.split(" ").filter((elm) => elm !== "");
+
+  return splitAndFilterStr
+    .map((x, index) => {
+      if (index == 0) return x.toLowerCase();
+      return x.substr(0, 1).toUpperCase() + x.substr(1).toLowerCase();
+    })
+    .join("");
+}
 
 /* 8.Write a JavaScript function to find a word within a string.
 The function should return:
@@ -89,3 +99,4 @@ Output: You are searching for a word in an empty string. Please provide a valid 
 */
 
 export function searchWord(sentence, word) {}
+

@@ -116,7 +116,7 @@ describe("capitalizeEachWord", () => {
   });
 });
 
-describe.skip("camelCase", () => {
+describe("camelCase", () => {
   test("converts a sentence to camel case", () => {
     expect(camelCase("hello world")).toEqual("helloWorld");
     expect(camelCase("javascript is awesome")).toEqual("javascriptIsAwesome");

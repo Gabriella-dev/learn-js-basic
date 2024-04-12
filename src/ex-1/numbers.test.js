@@ -65,7 +65,7 @@ describe.skip("getGCD", () => {
   });
 });
 
-describe.skip("isNaturalNumber", () => {
+describe("isNaturalNumber", () => {
   test("should return true for natural numbers", () => {
     expect(isNaturalNumber(1)).toBe(true);
     expect(isNaturalNumber(10)).toBe(true);
