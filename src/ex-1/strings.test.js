@@ -141,7 +141,7 @@ describe("camelCase", () => {
   });
 });
 
-describe.skip("searchWord", () => {
+describe("searchWord", () => {
   test("returns the number of times a word is found in a sentence", () => {
     expect(searchWord("Hello World", "World")).toEqual(
       "The word World was found 1 times."

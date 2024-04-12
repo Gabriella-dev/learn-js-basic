@@ -39,15 +39,11 @@ export function capitalizeFirstLetter(str) {
 // the input string will be a sentence.
 
 export function capitalizeEachWord(str) {
-  const array1 = str.split(" ");
-  const newArray1 = [];
+  const array = str.split(" ");
+  const newArray = array.map((elem) => capitalizeFirstLetter(elem));
 
-  for (let x = 0; x < array1.length; x++) {
-    newArray1.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
-  }
-  return newArray1.join(" ");
+  return newArray.join(" ");
 }
-
 
 // 7. Write a JavaScript function to convert a string into camel case.
 // the function should return the camel cased string.
@@ -69,7 +65,7 @@ export function camelCase(str) {
     .join("");
 }
 
-/* 8.Write a JavaScript function to find a word within a string.
+/* 8.Write a JavaScript function to find a word within a sentence.
 The function should return:
 1. 'The word <word> was found <number> times if the word is found, 
 2. 'The word <word> does not exist in the sentence.' if the word is  not in the sentence.
@@ -98,5 +94,17 @@ console.log(searchWord("", "World"));
 Output: You are searching for a word in an empty string. Please provide a valid sentence.
 */
 
-export function searchWord(sentence, word) {}
+export function searchWord(sentence, word) {
+  if (word === "")
+    return "You are searching for an empty string. Please provide a valid word.";
+
+  if (sentence === "")
+    return "You are searching for a word in an empty string. Please provide a valid sentence.";
+
+  const number = sentence.split(" ").filter((elem) => elem === word).length;
+  const moreWords = `The word ${word} was found ${number} times.`;
+  const zeroWords = `The word ${word} does not exist in the sentence.`;
+
+  return number === 0 ? zeroWords : moreWords;
+}
 
