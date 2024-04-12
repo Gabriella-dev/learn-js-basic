@@ -33,7 +33,7 @@ describe("isBlank", () => {
   });
 });
 
-describe.skip("stringToArray", () => {
+describe("stringToArray", () => {
   test("converts a multi-word string to an array of words", () => {
     expect(stringToArray("Hello World JavaScript")).toEqual([
       "Hello",
@@ -55,7 +55,7 @@ describe.skip("stringToArray", () => {
   });
 });
 
-describe.skip("isString", () => {
+describe("isString", () => {
   test("returns true for a string input", () => {
     expect(isString("Hello")).toBe(true);
   });

@@ -14,7 +14,6 @@ export function isBlank(str) {
 The function should return the array of words. */
 
 export function stringToArray(str) {
-  console.log(str);
   return str === "" ? [] : str.split(" ");
 }
 
@@ -28,8 +27,6 @@ export function isString(input) {
 // the function should return the capitalized string.
 // the input string will be a single word.
 export function capitalizeFirstLetter(str) {
-  // return str && str[0].toUpperCase() + str.slice(1);
-
   return str && str.replace(/^./, (string) => string.toUpperCase());
 }
 
