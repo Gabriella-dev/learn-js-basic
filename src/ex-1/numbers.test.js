@@ -91,7 +91,7 @@ describe("factorial", () => {
   });
 });
 
-describe.skip("sum", () => {
+describe("sum", () => {
   test("should return the sum of all numbers in the array", () => {
     expect(sum([1, 2, 3, 4, 5])).toEqual(15);
     expect(sum([-1, -2, -3, -4, -5])).toEqual(-15);
@@ -103,7 +103,7 @@ describe.skip("sum", () => {
   });
 });
 
-describe.skip("calculateAverage", () => {
+describe("calculateAverage", () => {
   test("should return 0 for an empty array", () => {
     expect(calculateAverage([])).toEqual(0);
   });
@@ -118,7 +118,7 @@ describe.skip("calculateAverage", () => {
   });
 });
 
-describe.skip("calculateNthRoot", () => {
+describe("calculateNthRoot", () => {
   test("should return the nth root of a number", () => {
     expect(calculateNthRoot(16, 2)).toEqual(4);
     expect(calculateNthRoot(27, 3)).toEqual(3);

@@ -49,7 +49,9 @@ export function factorial(number) {
 // 8. Write a JavaScript function to calculate the sum of values in an array.
 // The input will be an array of numbers.
 // The output will be the sum of all the numbers in the array.
-export function sum(array) {}
+export function sum(array) {
+  return array.reduce((a, b) => a + b, 0);
+}
 
 // 9. Write a function to calculate the average of the values in an array. The results should be rounded to the nearest 2 decimal places and to be a number.
 // The input will be an array of numbers.
@@ -96,10 +98,7 @@ export function checkNumberType(number) {
 
 export function sumDigits(number) {
   const numbToString = String(number);
-  console.log({ numbToString });
   const getJustDigit = numbToString.replace(/\D/g, "");
-  console.log({ getJustDigit });
   const arr = getJustDigit.split("").reduce((acc, num) => acc + Number(num), 0);
-  console.log({ arr });
   return arr;
 }
