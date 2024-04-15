@@ -81,7 +81,7 @@ describe("isNaturalNumber", () => {
   });
 });
 
-describe.skip("factorial", () => {
+describe("factorial", () => {
   test("should return the factorial of a number", () => {
     expect(factorial(0)).toEqual(1);
     expect(factorial(1)).toEqual(1);

@@ -42,7 +42,9 @@ export function isNaturalNumber(number) {
 }
 
 // 7. Write a function to find the factorial of a number.   (The factorial of a number is the product of all the whole numbers from that number down to 1.)
-export function factorial(number) {}
+export function factorial(number) {
+  return number < 2 ? 1 : number * factorial(number - 1);
+}
 
 // 8. Write a JavaScript function to calculate the sum of values in an array.
 // The input will be an array of numbers.
