@@ -25,7 +25,10 @@ export function findLowestValue(array) {
 // 5. Write a function to get the greatest common divisor (GCD) of two integers.
 // the input will be two integers.
 // Note : According to Wikipedia - In mathematics, the greatest common divisor (gcd) of two or more integers, when at least one of them is not zero, is the largest positive integer that divides the numbers without a remainder. For example, the GCD of 8 and 12 is 4.
-export function getGCD(a, b) {}
+export function getGCD(a, b) {
+  if (b === 0) return a;
+  return getGCD(b, a % b);
+}
 
 // 6. Write a JavaScript function to find out if a number is a natural number or not.
 // The input will be a number.
@@ -63,7 +66,6 @@ export function convertToNegative(number) {
   if (number === 0) return 0;
   return -Math.abs(number);
 }
-  
 
 // 12. Write a JavaScript function to calculate the percentage (%) of a number.
 // The input will be a number and the percentage.
@@ -80,7 +82,6 @@ export function checkNumberType(number) {
   return num ? "It is a whole number." : "Number has a decimal place.";
 }
 
-
 // 14. Write a JavaScript function to calculate the sum of digits of a number.
 // The input will be a number.
 
@@ -92,4 +93,11 @@ export function checkNumberType(number) {
 */
 
 export function sumDigits(number) {
+  const numbToString = String(number);
+  console.log({ numbToString });
+  const getJustDigit = numbToString.replace(/\D/g, "");
+  console.log({ getJustDigit });
+  const arr = getJustDigit.split("").reduce((acc, num) => acc + Number(num), 0);
+  console.log({ arr });
+  return arr;
 }

@@ -55,7 +55,7 @@ describe("findLowestValue", () => {
   });
 });
 
-describe.skip("getGCD", () => {
+describe("getGCD", () => {
   test("should return the greatest common divisor of two numbers", () => {
     expect(getGCD(10, 25)).toEqual(5);
     expect(getGCD(14, 21)).toEqual(7);
@@ -169,7 +169,7 @@ describe("checkNumberType", () => {
   });
 });
 
-describe.skip("sumDigits", () => {
+describe("sumDigits", () => {
   test("should return the sum of the digits of a positive number", () => {
     expect(sumDigits(123)).toEqual(6);
     expect(sumDigits(456)).toEqual(15);
