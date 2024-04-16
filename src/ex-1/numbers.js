@@ -54,10 +54,18 @@ export function sum(array) {
 }
 
 // 9. Write a function to calculate the average of the values in an array. The results should be rounded to the nearest 2 decimal places and to be a number.
+  
 // The input will be an array of numbers.
 // The output will be the average of all the numbers in the array.
-export function calculateAverage(array) {}
+export function calculateAverage(array) {
+  if (array.length === 0) return 0;
 
+  const sumArray = array.reduce((a, b) => a + b, 0);
+  const average = sumArray / array.length;
+  const roundedAverage = parseFloat(average.toFixed(2));
+
+  return roundedAverage;
+}
 // 10. Write a JavaScript function to calculate the nth root of a number.
 // The input will be a number and the root.
 // The output will be the nth root of the number.
