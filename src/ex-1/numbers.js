@@ -69,7 +69,9 @@ export function calculateAverage(array) {
 // 10. Write a JavaScript function to calculate the nth root of a number.
 // The input will be a number and the root.
 // The output will be the nth root of the number.
-export function calculateNthRoot(number, root) {}
+export function calculateNthRoot(number, root) {
+  return Math.pow(number, 1 / root);
+}
 
 // 11. Write a JavaScript function to convert a positive number to a negative number.
 // The input will be a positive number.
