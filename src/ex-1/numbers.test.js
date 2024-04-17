@@ -12,9 +12,10 @@ import {
   calculatePercentage,
   checkNumberType,
   sumDigits,
+  findLowestValue,
 } from "./numbers.js";
 
-describe.skip("add", () => {
+describe("add", () => {
   test("should return the sum of two numbers", () => {
     expect(add(2, 3)).toEqual(5);
     expect(add(-1, 5)).toEqual(4);
@@ -24,7 +25,7 @@ describe.skip("add", () => {
   });
 });
 
-describe.skip("formatNumber", () => {
+describe("formatNumber", () => {
   test("should format the number with the specified decimals", () => {
     expect(formatNumber(3.14159, 2)).toEqual("3.14");
     expect(formatNumber(10, 0)).toEqual("10");
@@ -34,7 +35,7 @@ describe.skip("formatNumber", () => {
   });
 });
 
-describe.skip("findHighestValue", () => {
+describe("findHighestValue", () => {
   test("should return the highest value in the array", () => {
     expect(findHighestValue([1, 2, 3, 4, 5])).toEqual(5);
     expect(findHighestValue([-1, -2, -3, -4, -5])).toEqual(-1);
@@ -44,17 +45,17 @@ describe.skip("findHighestValue", () => {
   });
 });
 
-describe.skip("findLowestValue", () => {
+describe("findLowestValue", () => {
   test("should return the lowest value in the array", () => {
-    expect(findHighestValue([1, 2, 3, 4, 5])).toEqual(1);
-    expect(findHighestValue([-1, -2, -3, -4, -5])).toEqual(-5);
-    expect(findHighestValue([10, 20, 30, 40, 50])).toEqual(10);
-    expect(findHighestValue([0, 0, 0, 0, 0])).toEqual(0);
-    expect(findHighestValue([-10, -20, -30, -40, -50])).toEqual(-50);
+    expect(findLowestValue([1, 2, 3, 4, 5])).toEqual(1);
+    expect(findLowestValue([-1, -2, -3, -4, -5])).toEqual(-5);
+    expect(findLowestValue([10, 20, 30, 40, 50])).toEqual(10);
+    expect(findLowestValue([0, 0, 0, 0, 0])).toEqual(0);
+    expect(findLowestValue([-10, -20, -30, -40, -50])).toEqual(-50);
   });
 });
 
-describe.skip("getGCD", () => {
+describe("getGCD", () => {
   test("should return the greatest common divisor of two numbers", () => {
     expect(getGCD(10, 25)).toEqual(5);
     expect(getGCD(14, 21)).toEqual(7);
@@ -64,7 +65,7 @@ describe.skip("getGCD", () => {
   });
 });
 
-describe.skip("isNaturalNumber", () => {
+describe("isNaturalNumber", () => {
   test("should return true for natural numbers", () => {
     expect(isNaturalNumber(1)).toBe(true);
     expect(isNaturalNumber(10)).toBe(true);
@@ -80,7 +81,7 @@ describe.skip("isNaturalNumber", () => {
   });
 });
 
-describe.skip("factorial", () => {
+describe("factorial", () => {
   test("should return the factorial of a number", () => {
     expect(factorial(0)).toEqual(1);
     expect(factorial(1)).toEqual(1);
@@ -90,7 +91,7 @@ describe.skip("factorial", () => {
   });
 });
 
-describe.skip("sum", () => {
+describe("sum", () => {
   test("should return the sum of all numbers in the array", () => {
     expect(sum([1, 2, 3, 4, 5])).toEqual(15);
     expect(sum([-1, -2, -3, -4, -5])).toEqual(-15);
@@ -102,7 +103,7 @@ describe.skip("sum", () => {
   });
 });
 
-describe.skip("calculateAverage", () => {
+describe("calculateAverage", () => {
   test("should return 0 for an empty array", () => {
     expect(calculateAverage([])).toEqual(0);
   });
@@ -117,7 +118,7 @@ describe.skip("calculateAverage", () => {
   });
 });
 
-describe.skip("calculateNthRoot", () => {
+describe("calculateNthRoot", () => {
   test("should return the nth root of a number", () => {
     expect(calculateNthRoot(16, 2)).toEqual(4);
     expect(calculateNthRoot(27, 3)).toEqual(3);
@@ -127,7 +128,7 @@ describe.skip("calculateNthRoot", () => {
   });
 });
 
-describe.skip("convertToNegative", () => {
+describe("convertToNegative", () => {
   test("should convert a positive number to a negative number", () => {
     expect(convertToNegative(5)).toEqual(-5);
     expect(convertToNegative(10)).toEqual(-10);
@@ -145,7 +146,7 @@ describe.skip("convertToNegative", () => {
   });
 });
 
-describe.skip("calculatePercentage", () => {
+describe("calculatePercentage", () => {
   test("should calculate the percentage of a number", () => {
     expect(calculatePercentage(100, 50)).toEqual(50);
     expect(calculatePercentage(200, 25)).toEqual(50);
@@ -155,7 +156,7 @@ describe.skip("calculatePercentage", () => {
   });
 });
 
-describe.skip("checkNumberType", () => {
+describe("checkNumberType", () => {
   test("should return 'It is a whole number.' for whole numbers", () => {
     expect(checkNumberType(1)).toEqual("It is a whole number.");
     expect(checkNumberType(10)).toEqual("It is a whole number.");

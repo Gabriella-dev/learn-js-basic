@@ -1,5 +1,7 @@
 // 1. return hello world
-export function helloWorld() {}
+export function helloWorld() {
+  return "hello world";
+}
 
 /* 2. Write a JavaScript function isBlank(input) that checks whether or not the input String is blank. A blank string is one that contains nothing but whitespace characters.
 The function returns true if the input String is blank, false otherwise. */
@@ -12,7 +14,6 @@ export function isBlank(str) {
 The function should return the array of words. */
 
 export function stringToArray(str) {
-  console.log(str);
   return str === "" ? [] : str.split(" ");
 }
 
@@ -25,13 +26,21 @@ export function isString(input) {
 // 5. Write a JavaScript function to capitalize the first letter of a string.
 // the function should return the capitalized string.
 // the input string will be a single word.
-export function capitalizeFirstLetter(str) {}
+export function capitalizeFirstLetter(str) {
+  return str && str.replace(/^./, (string) => string.toUpperCase());
+}
+
 
 // 6. Write a JavaScript function to capitalize the first letter of each word in a string.
 // the function should return the capitalized string.
 // the input string will be a sentence.
 
-export function capitalizeEachWord(str) {}
+export function capitalizeEachWord(str) {
+  const array = str.split(" ");
+  const newArray = array.map((elem) => capitalizeFirstLetter(elem));
+
+  return newArray.join(" ");
+}
 
 // 7. Write a JavaScript function to convert a string into camel case.
 // the function should return the camel cased string.
@@ -41,9 +50,19 @@ console.log(camelize("JavaScript Exercises")); => "JavaScriptExercises"
 console.log(camelize("JavaScript exercises")); =>"JavaScriptExercises"
 console.log(camelize("JavaScriptExercises")); => "JavaScriptExercises"*/
 
-export function camelCase(str) {}
+export function camelCase(str) {
+  if (str.length === 0) return "";
+  const splitAndFilterStr = str.split(" ").filter((elm) => elm !== "");
 
-/* 8.Write a JavaScript function to find a word within a string.
+  return splitAndFilterStr
+    .map((x, index) => {
+      if (index == 0) return x.toLowerCase();
+      return x.substr(0, 1).toUpperCase() + x.substr(1).toLowerCase();
+    })
+    .join("");
+}
+
+/* 8.Write a JavaScript function to find a word within a sentence.
 The function should return:
 1. 'The word <word> was found <number> times if the word is found, 
 2. 'The word <word> does not exist in the sentence.' if the word is  not in the sentence.
@@ -72,4 +91,17 @@ console.log(searchWord("", "World"));
 Output: You are searching for a word in an empty string. Please provide a valid sentence.
 */
 
-export function searchWord(sentence, word) {}
+export function searchWord(sentence, word) {
+  if (word === "")
+    return "You are searching for an empty string. Please provide a valid word.";
+
+  if (sentence === "")
+    return "You are searching for a word in an empty string. Please provide a valid sentence.";
+
+  const number = sentence.split(" ").filter((elem) => elem === word).length;
+  const moreWords = `The word ${word} was found ${number} times.`;
+  const zeroWords = `The word ${word} does not exist in the sentence.`;
+
+  return number === 0 ? zeroWords : moreWords;
+}
+

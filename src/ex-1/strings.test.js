@@ -9,13 +9,13 @@ import {
   searchWord,
 } from "./strings.js";
 
-describe.skip("helloWorld", () => {
+describe("helloWorld", () => {
   test("should return hello world", () => {
     expect(helloWorld()).toEqual("hello world");
   });
 });
 
-describe.skip("isBlank", () => {
+describe("isBlank", () => {
   test("returns true for an empty string", () => {
     expect(isBlank("")).toBe(true);
   });
@@ -33,7 +33,7 @@ describe.skip("isBlank", () => {
   });
 });
 
-describe.skip("stringToArray", () => {
+describe("stringToArray", () => {
   test("converts a multi-word string to an array of words", () => {
     expect(stringToArray("Hello World JavaScript")).toEqual([
       "Hello",
@@ -55,7 +55,7 @@ describe.skip("stringToArray", () => {
   });
 });
 
-describe.skip("isString", () => {
+describe("isString", () => {
   test("returns true for a string input", () => {
     expect(isString("Hello")).toBe(true);
   });
@@ -77,7 +77,7 @@ describe.skip("isString", () => {
   });
 });
 
-describe.skip("capitalizeFirstLetter", () => {
+describe("capitalizeFirstLetter", () => {
   test("capitalizes the first letter of a word", () => {
     expect(capitalizeFirstLetter("hello")).toEqual("Hello");
     expect(capitalizeFirstLetter("world")).toEqual("World");
@@ -95,7 +95,7 @@ describe.skip("capitalizeFirstLetter", () => {
   });
 });
 
-describe.skip("capitalizeEachWord", () => {
+describe("capitalizeEachWord", () => {
   test("capitalizes each word in a sentence", () => {
     expect(capitalizeEachWord("hello world")).toEqual("Hello World");
     expect(capitalizeEachWord("javascript is awesome")).toEqual(
@@ -116,7 +116,7 @@ describe.skip("capitalizeEachWord", () => {
   });
 });
 
-describe.skip("camelCase", () => {
+describe("camelCase", () => {
   test("converts a sentence to camel case", () => {
     expect(camelCase("hello world")).toEqual("helloWorld");
     expect(camelCase("javascript is awesome")).toEqual("javascriptIsAwesome");
@@ -141,7 +141,7 @@ describe.skip("camelCase", () => {
   });
 });
 
-describe.skip("searchWord", () => {
+describe("searchWord", () => {
   test("returns the number of times a word is found in a sentence", () => {
     expect(searchWord("Hello World", "World")).toEqual(
       "The word World was found 1 times."
