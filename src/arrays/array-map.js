@@ -1,5 +1,3 @@
-import { capitalizeEachWord, capitalizeFirstLetter } from "../../src/ex-1";
-
 // 1. write a function that Make an array of numbers that are doubles of the first array
 //the input is an array of numbers
 // if the input is an empty array, return []
