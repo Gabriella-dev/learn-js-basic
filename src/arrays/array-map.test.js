@@ -1,4 +1,8 @@
-import { doubleNumbers, stringifyNumbers } from "./array-map.js";
+import {
+  doubleNumbers,
+  stringifyNumbers,
+  capitalizeNames,
+} from "./array-map.js";
 
 describe.skip("doubleNumbers", () => {
   test("should return an empty array if the input is an empty array", () => {
@@ -18,5 +22,25 @@ describe.skip("stringifyNumbers", () => {
 
   test("should return an array of strings representing the input array numbers", () => {
     expect(stringifyNumbers([2, 5, 100])).toEqual(["2", "5", "100"]);
+  });
+});
+
+describe.skip("capitalizeNames", () => {
+  test("should return an empty array if the input is an empty array", () => {
+    expect(capitalizeNames([])).toEqual([]);
+  });
+
+  test("should return an array of names with each word capitalized", () => {
+    const students = [
+      { name: "john doe", age: 24 },
+      { name: "jane smith", age: 34 },
+      { name: "alexander the great", age: 23 },
+    ];
+    const expected = [
+      { name: "John Doe", age: 24 },
+      { name: "Jane Smith", age: 34 },
+      { name: "Alexander The Great", age: 23 },
+    ];
+    expect(capitalizeNames(students)).toEqual(expected);
   });
 });
