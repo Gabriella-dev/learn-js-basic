@@ -10,7 +10,15 @@ doubleNumbers([2, 5, 100, 0]); // [4, 10, 200, 0]
 
 */
 
-export const doubleNumbers = (input) => {};
+export const doubleNumbers = (input) => {
+  if (input.length === 0) return [];
+  let newArr = [];
+  for (let i = 0; i < input.length; i++) {
+    newArr.push(input[i] * 2);
+  }
+  return newArr;
+};
+
 
 // 2. write a function that Take an array of numbers and make them strings
 //the input is an array of numbers

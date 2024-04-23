@@ -4,7 +4,7 @@ import {
   capitalizeNames,
 } from "./array-map.js";
 
-describe.skip("doubleNumbers", () => {
+describe("doubleNumbers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(doubleNumbers([])).toEqual([]);
   });
