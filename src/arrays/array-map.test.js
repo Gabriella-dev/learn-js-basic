@@ -15,7 +15,7 @@ describe("doubleNumbers", () => {
   });
 });
 
-describe.skip("stringifyNumbers", () => {
+describe("stringifyNumbers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(stringifyNumbers([])).toEqual([]);
   });
@@ -25,7 +25,7 @@ describe.skip("stringifyNumbers", () => {
   });
 });
 
-describe.skip("capitalizeNames", () => {
+describe("capitalizeNames", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(capitalizeNames([])).toEqual([]);
   });
