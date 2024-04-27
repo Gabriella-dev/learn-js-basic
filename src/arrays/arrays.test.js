@@ -22,7 +22,7 @@ describe.skip("isArray", () => {
   });
 });
 
-describe.skip("cloneArray", () => {
+describe("cloneArray", () => {
   test("should return a new array with the same elements", () => {
     const input = [1, 2, 3];
     const clonedArray = cloneArray(input);

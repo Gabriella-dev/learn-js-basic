@@ -18,7 +18,9 @@ export const isArray = (input) => {};
  * cloneArray(["a", "b", "c"]) -> ["a", "b", "c"]
  * */
 
-export const cloneArray = (input) => {};
+export const cloneArray = (input) => {
+  return input.map((x) => x);
+};
 
 // 3. using .slice() method Write a JavaScript function to get part of an array.
 // If 'n' is not provided, return all element of the array.
