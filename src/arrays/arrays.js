@@ -34,7 +34,10 @@ export const cloneArray = (input) => {
  * getLastElement(animals, 3) -> ['duck', 'elephant']
  *
  * */
-export const getLastElements = (input, n) => {};
+export const getLastElements = (input, n) => {
+  if (n === 0) return input;
+  return input.slice(n);
+};
 
 // 4. Write a simple JavaScript program to join all elements of the following array into a string.
 /*
@@ -54,7 +57,10 @@ export const getLastElements = (input, n) => {};
  *
  *
  * */
-export const joinArray = (input, separator) => {};
+export const joinArray = (input, separator) => {
+  if (input.length === 0) return "";
+  return input.join(separator);
+};
 
 // 5. Write a JavaScript function to find the most frequent item of an array.
 // If there are multiple items that appear the same number of times, return the first item that appears in the array.
@@ -69,4 +75,7 @@ export const joinArray = (input, separator) => {};
  * mostFrequentItem([]) -> "The array has no elements"
  * */
 
-export const mostFrequentItem = (input) => {};
+export const mostFrequentItem = (input) => {
+  if (input.length === 0) return "The array has no elements";
+  if (input.length === 1) return input[0];
+};
