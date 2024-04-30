@@ -6,7 +6,7 @@ import {
   mostFrequentItem,
 } from "./arrays.js";
 
-describe.skip("isArray", () => {
+describe("isArray", () => {
   test("should return true if input is an array", () => {
     expect(isArray([])).toBe(true);
     expect(isArray([1, 2, 3])).toBe(true);

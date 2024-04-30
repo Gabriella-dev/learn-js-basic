@@ -9,7 +9,9 @@ isArray(123) -> false
 isArray("hello") -> false;
 isArray ({key: "value" }) -> false;
  */
-export const isArray = (input) => {};
+export const isArray = (input) => {
+  return Array.isArray(input);
+};
 
 // 2. Write a JavaScript function to clone an array.
 /**
