@@ -42,3 +42,23 @@ clubMembers([{name: 'John', member: true}, {name: 'Jane', member: false}, {name:
 clubMembers([]); // []
 */
 export const clubMembers = (peopleArray) => {};
+
+//  5.write a function called counterSpy. It takes an array of names. The function should return an array containing the names of the people who aren't spies.
+// Recent intelligence has revealed that all spies codename include the letters 's', 'p' or 'y'. You can't afford to take any chances, and all names that include those letters should be removed.
+// the input is an array of strings
+// if the input is an empty array, return []
+// the input array will have only strings
+/*  examples:
+counterSpy(["John", "Stephan", "Jey"]); // ["John"]
+contrSpy(['Diana', 'Alex', 'Aly', 'Pete', 'Aster'],) // [ 'Diana','Alex']
+contrSpy([]); // []
+*/
+
+// EXTRA CREDIT:
+// Also, our spy admin team have asked that the names come back in alphabetical order, for spy filing purposes. So if you could do that you'd really be saving them a lot of work. Thanks.
+
+// contrSpy(['Diana', 'Alex', 'Aly', 'Pete', 'Aster'],) // [ 'Alex','Diana']
+
+export const counterSpy = (namesArray) => {
+};
+

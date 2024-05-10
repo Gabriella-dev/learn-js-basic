@@ -3,6 +3,7 @@ import {
   shortStrings,
   olderThan18,
   clubMembers,
+  counterSpy,
 } from "./array-filter";
 
 describe.skip("evenNumbers", () => {
@@ -79,6 +80,30 @@ describe.skip("clubMembers", () => {
     ).toEqual([
       { name: "John", member: true },
       { name: "Jill", member: true },
+    ]);
+  });
+});
+
+describe("counterSpy", () => {
+  test("Return an empty array when it passed an empty array", () => {
+    expect(counterSpy([])).toEqual([]);
+  });
+  test("Return an empty array when the string contain s,p or y", () => {
+    expect(counterSpy(["Daryl"])).toEqual([]);
+  });
+  test("Return an array containing the names of the people who aren't spies, the string doesn't contain s, p or y", () => {
+    expect(counterSpy(["Daryl", "Harriet", "James"])).toEqual(["Harriet"]);
+    expect(counterSpy(["Sam", "Daryl", "Chris", "Harriet", "Mauro"])).toEqual([
+      "Harriet",
+      "Mauro",
+    ]);
+  });
+  test("Return the array in alphabetical order", () => {
+    expect(counterSpy(["Mauro", "Harriet"])).toEqual(["Harriet", "Mauro"]);
+    expect(counterSpy(["Sam", "Harriet", "Adrian", "Mauro"])).toEqual([
+      "Adrian",
+      "Harriet",
+      "Mauro",
     ]);
   });
 });
