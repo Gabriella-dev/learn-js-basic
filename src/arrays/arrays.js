@@ -78,4 +78,17 @@ export const joinArray = (input, separator) => {
 export const mostFrequentItem = (input) => {
   if (input.length === 0) return "The array has no elements";
   if (input.length === 1) return input[0];
+  let counts = {};
+  let maxCount = 0;
+  let mostFrequent = null;
+
+  input.forEach((num, index) => {
+    counts[num] = (counts[num] || 0) + 1;
+    if (counts[num] >= maxCount) {
+      maxCount = counts[num];
+      mostFrequent = num;
+    }
+  });
+
+  return mostFrequent;
 };
