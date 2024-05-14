@@ -20,7 +20,9 @@ shortStrings(["dog", "wolf", "by", "family", "eaten", "camping"]); // ["dog", "w
 shortStrings(["dog", "wolf", "by", "family", "eaten", "camping", ""]); // ["dog", "wolf", "by", "eaten", ""]
 shortStrings([]); // []
 */
-export const shortStrings = (stringsArray) => {};
+export const shortStrings = (stringsArray) => {
+  return stringsArray.filter((x) => x.length <= 5);
+};
 
 // 3. Given an array of students objects, each object has a name property and age property. Write a function that return an array of the names of the students who are older than 18 years old.
 // the input is an array of objects
