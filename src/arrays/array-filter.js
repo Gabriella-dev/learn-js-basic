@@ -7,7 +7,9 @@ evenNumbers([2, 5, 100]); // [2, 100]
 evenNumbers([2, 5, 100, 0]); // [2, 100, 0]
 evenNumbers([]); // []
 */
-export const evenNumbers = (nubersArray) => {};
+export const evenNumbers = (numbersArray) => {
+  return numbersArray.filter((x) => x % 2 === 0);
+};
 
 // 2. Given an array of strings, return a new array that only includes those that are 5 characters or fewer in length
 // the input is an array of strings
@@ -18,7 +20,7 @@ shortStrings(["dog", "wolf", "by", "family", "eaten", "camping"]); // ["dog", "w
 shortStrings(["dog", "wolf", "by", "family", "eaten", "camping", ""]); // ["dog", "wolf", "by", "eaten", ""]
 shortStrings([]); // []
 */
-export const shortStrings = (strinsArray) => {};
+export const shortStrings = (stringsArray) => {};
 
 // 3. Given an array of students objects, each object has a name property and age property. Write a function that return an array of the names of the students who are older than 18 years old.
 // the input is an array of objects
