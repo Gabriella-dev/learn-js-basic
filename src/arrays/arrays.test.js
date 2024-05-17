@@ -6,7 +6,7 @@ import {
   mostFrequentItem,
 } from "./arrays.js";
 
-describe.skip("isArray", () => {
+describe("isArray", () => {
   test("should return true if input is an array", () => {
     expect(isArray([])).toBe(true);
     expect(isArray([1, 2, 3])).toBe(true);
@@ -22,7 +22,7 @@ describe.skip("isArray", () => {
   });
 });
 
-describe.skip("cloneArray", () => {
+describe("cloneArray", () => {
   test("should return a new array with the same elements", () => {
     const input = [1, 2, 3];
     const clonedArray = cloneArray(input);
@@ -49,7 +49,7 @@ describe.skip("cloneArray", () => {
   });
 });
 
-describe.skip("getLastElements", () => {
+describe("getLastElements", () => {
   test("should return all elements of the array if 'n' is not provided", () => {
     const input = ["ant", "bison", "camel", "duck", "elephant"];
     const result = getLastElements(input);
@@ -63,7 +63,7 @@ describe.skip("getLastElements", () => {
   });
 });
 
-describe.skip("joinArray", () => {
+describe("joinArray", () => {
   test("should join the elements of the array with the specified separator", () => {
     const input = ["apple", "banana", "cherry"];
     const separator = "-";
@@ -85,7 +85,7 @@ describe.skip("joinArray", () => {
   });
 });
 
-describe.skip("mostFrequentItem", () => {
+describe("mostFrequentItem", () => {
   test("should return the most frequent item in the array", () => {
     const input = [1, 2, 3, 2, 1, 2, 3, 3, 3];
     const result = mostFrequentItem(input);

@@ -9,7 +9,9 @@ isArray(123) -> false
 isArray("hello") -> false;
 isArray ({key: "value" }) -> false;
  */
-export const isArray = (input) => {};
+export const isArray = (input) => {
+  return Array.isArray(input);
+};
 
 // 2. Write a JavaScript function to clone an array.
 /**
@@ -18,7 +20,9 @@ export const isArray = (input) => {};
  * cloneArray(["a", "b", "c"]) -> ["a", "b", "c"]
  * */
 
-export const cloneArray = (input) => {};
+export const cloneArray = (input) => {
+  return input.map((x) => x);
+};
 
 // 3. using .slice() method Write a JavaScript function to get part of an array.
 // If 'n' is not provided, return all element of the array.
@@ -30,7 +34,10 @@ export const cloneArray = (input) => {};
  * getLastElement(animals, 3) -> ['duck', 'elephant']
  *
  * */
-export const getLastElements = (input, n) => {};
+export const getLastElements = (input, n) => {
+  if (n === 0) return input;
+  return input.slice(n);
+};
 
 // 4. Write a simple JavaScript program to join all elements of the following array into a string.
 /*
@@ -50,7 +57,10 @@ export const getLastElements = (input, n) => {};
  *
  *
  * */
-export const joinArray = (input, separator) => {};
+export const joinArray = (input, separator) => {
+  if (input.length === 0) return "";
+  return input.join(separator);
+};
 
 // 5. Write a JavaScript function to find the most frequent item of an array.
 // If there are multiple items that appear the same number of times, return the first item that appears in the array.
@@ -65,4 +75,20 @@ export const joinArray = (input, separator) => {};
  * mostFrequentItem([]) -> "The array has no elements"
  * */
 
-export const mostFrequentItem = (input) => {};
+export const mostFrequentItem = (input) => {
+  if (input.length === 0) return "The array has no elements";
+  if (input.length === 1) return input[0];
+  let counts = {};
+  let maxCount = 0;
+  let mostFrequent = null;
+
+  input.forEach((num, index) => {
+    counts[num] = (counts[num] || 0) + 1;
+    if (counts[num] >= maxCount) {
+      maxCount = counts[num];
+      mostFrequent = num;
+    }
+  });
+
+  return mostFrequent;
+};

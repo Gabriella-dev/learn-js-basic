@@ -1,3 +1,5 @@
+import { capitalizeEachWord } from "../ex-1/strings.js";
+
 // 1. write a function that Make an array of numbers that are doubles of the first array
 //the input is an array of numbers
 // if the input is an empty array, return []
@@ -10,7 +12,10 @@ doubleNumbers([2, 5, 100, 0]); // [4, 10, 200, 0]
 
 */
 
-export const doubleNumbers = (input) => {};
+export const doubleNumbers = (input) => {
+  if (input.length === 0) return [];
+  return input.map((elem) => elem * 2);
+};
 
 // 2. write a function that Take an array of numbers and make them strings
 //the input is an array of numbers
@@ -21,7 +26,10 @@ stringifyNumbers([]); // []
 stringifyNumbers([2, 5, 100]); // ['2', '5', '100']
 */
 
-export const stringifyNumbers = (input) => {};
+export const stringifyNumbers = (input) => {
+  if (input === 0) return [];
+  return input.map(String);
+};
 
 // 3. you have an array of students objects, each object has a name property and age property write a function that Capitalize each first letter in the name of the students
 // the input is an array of objects
@@ -42,4 +50,8 @@ capitalizeNames([{name: 'john doe', age:24},
 capitalizeNames([]); return [],
 */
 
-export const capitalizeNames = (students) => {};
+export const capitalizeNames = (students) => {
+  const studentsName = students.name.capitalizeEachWord();
+
+  return studentsName;
+};
