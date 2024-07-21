@@ -32,7 +32,7 @@ describe.skip("shortStrings", () => {
   });
 });
 
-describe.skip("olderThan18", () => {
+describe("olderThan18", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(olderThan18([])).toEqual([]);
   });
@@ -56,7 +56,7 @@ describe.skip("olderThan18", () => {
   });
 });
 
-describe.skip("clubMembers", () => {
+describe("clubMembers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(clubMembers([])).toEqual([]);
   });

@@ -29,7 +29,19 @@ olderThan18([{name: 'John', age: 16}, {name: 'Jane', age: 24}, {name: 'Jim', age
 olderThan18([{name: 'John', age: 16}, {name: 'Jane', age: 24}, {name: 'Jim', age: 15}, {name: 'Jill', age: 19}]); // ['Jane', 'Jill']
 olderThan18([]); // []
 */
-export const olderThan18 = (studentsArray) => {};
+export const olderThan18 = (studentsArray) => {
+  if (studentsArray.length === 0) return [];
+  const namesAge = studentsArray.filter((names) => names.age > 18);
+  console.log({ studentsArray });
+  console.log({ namesAge });
+  return namesAge.map((names) => names.name);
+
+  // return studentsArray.length == 0
+  //   ? []
+  //   : studentsArray
+  //       .filter((names) => names.age > 18)
+  //       .map((names) => names.name);
+};
 
 // 4. Given an array of people objects, return a new array that has filtered out all those who don't belong to the club.
 // the input is an array of objects
@@ -41,7 +53,9 @@ clubMembers([{name: 'John', member: true}, {name: 'Jane', member: false}, {name:
 clubMembers([{name: 'John', member: true}, {name: 'Jane', member: false}, {name: 'Jim', member: false}, {name: 'Jill', member: true}]); // [{name: 'John', member: true}, {name: 'Jill', member: true}]
 clubMembers([]); // []
 */
-export const clubMembers = (peopleArray) => {};
+export const clubMembers = (peopleArray) => {
+  return peopleArray.filter((item) => item.member === true);
+};
 
 //  5.write a function called counterSpy. It takes an array of names. The function should return an array containing the names of the people who aren't spies.
 // Recent intelligence has revealed that all spies codename include the letters 's', 'p' or 'y'. You can't afford to take any chances, and all names that include those letters should be removed.
@@ -60,5 +74,15 @@ contrSpy([]); // []
 // contrSpy(['Diana', 'Alex', 'Aly', 'Pete', 'Aster'],) // [ 'Alex','Diana']
 
 export const counterSpy = (namesArray) => {
+  // if (namesArray.length == 0) return [];
+  // console.log({ namesArray });
+  // const noSpy = namesArray.filter((name) => !/[spy]/gi.test(name));
+  // noSpy.sort();
+  // console.log({ noSpy });
+  // return noSpy;
+  return namesArray.length == 0
+    ? []
+    : namesArray.sort().filter((name) => !/[spy]/gi.test(name));
 };
+
 
