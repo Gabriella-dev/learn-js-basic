@@ -17,7 +17,7 @@ describe("evenNumbers", () => {
   });
 });
 
-describe.skip("shortStrings", () => {
+describe("shortStrings", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(shortStrings([])).toEqual([]);
   });
