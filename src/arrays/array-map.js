@@ -10,7 +10,9 @@ doubleNumbers([2, 5, 100, 0]); // [4, 10, 200, 0]
 
 */
 
-export const doubleNumbers = (input) => {};
+export const doubleNumbers = (input) => {
+  return input === 0 ? [] : input.map((n) => n * 2);
+};
 
 // 2. write a function that Take an array of numbers and make them strings
 //the input is an array of numbers
