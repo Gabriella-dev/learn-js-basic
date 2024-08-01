@@ -32,15 +32,7 @@ olderThan18([]); // []
 export const olderThan18 = (studentsArray) => {
   if (studentsArray.length === 0) return [];
   const namesAge = studentsArray.filter((names) => names.age > 18);
-  console.log({ studentsArray });
-  console.log({ namesAge });
   return namesAge.map((names) => names.name);
-
-  // return studentsArray.length == 0
-  //   ? []
-  //   : studentsArray
-  //       .filter((names) => names.age > 18)
-  //       .map((names) => names.name);
 };
 
 // 4. Given an array of people objects, return a new array that has filtered out all those who don't belong to the club.
@@ -74,12 +66,6 @@ contrSpy([]); // []
 // contrSpy(['Diana', 'Alex', 'Aly', 'Pete', 'Aster'],) // [ 'Alex','Diana']
 
 export const counterSpy = (namesArray) => {
-  // if (namesArray.length == 0) return [];
-  // console.log({ namesArray });
-  // const noSpy = namesArray.filter((name) => !/[spy]/gi.test(name));
-  // noSpy.sort();
-  // console.log({ noSpy });
-  // return noSpy;
   return namesArray.length == 0
     ? []
     : namesArray.sort().filter((name) => !/[spy]/gi.test(name));
