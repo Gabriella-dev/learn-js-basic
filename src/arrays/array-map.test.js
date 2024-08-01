@@ -15,7 +15,7 @@ describe("doubleNumbers", () => {
   });
 });
 
-describe.skip("stringifyNumbers", () => {
+describe("stringifyNumbers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(stringifyNumbers([])).toEqual([]);
   });

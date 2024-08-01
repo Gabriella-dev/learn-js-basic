@@ -23,7 +23,9 @@ stringifyNumbers([]); // []
 stringifyNumbers([2, 5, 100]); // ['2', '5', '100']
 */
 
-export const stringifyNumbers = (input) => {};
+export const stringifyNumbers = (input) => {
+  return input === 0 ? [] : input.map((num) => num.toString());
+};
 
 // 3. you have an array of students objects, each object has a name property and age property write a function that Capitalize each first letter in the name of the students
 // the input is an array of objects
