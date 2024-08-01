@@ -6,7 +6,7 @@ import {
   counterSpy,
 } from "./array-filter";
 
-describe.skip("evenNumbers", () => {
+describe("evenNumbers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(evenNumbers([])).toEqual([]);
   });
