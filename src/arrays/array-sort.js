@@ -79,11 +79,8 @@ ascendingOrderByKey([], "age"); // []
 export const ascendingOrderByKey = (objectsArray, key) => {
   console.log({ objectsArray });
   console.log({ key });
-  for (const keyObj in objectsArray) {
-    if (keyObj === 0) {
-      return [];
-    }
-  }
+  const numbers = objectsArray[0].age;
+  console.log(numbers);
   
 };
 
