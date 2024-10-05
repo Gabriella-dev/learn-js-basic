@@ -8,7 +8,9 @@
 // alphabeticalOrder(["dog", "wolf", "by", "family", "eaten", "camping", ""]); // ["", "by", "camping", "dog", "eaten", "family", "wolf"]
 // alphabeticalOrder([]); // []
 // */
-export const alphabeticalOrder = (stringsArray) => {};
+export const alphabeticalOrder = (stringsArray) => {
+  return stringsArray === 0 ? [] : stringsArray.sort();
+};
 
 // 2. create a function that takes an array of string and return sorted in reverse alphabetical order
 // the input is an array of strings
