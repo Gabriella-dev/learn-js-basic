@@ -8,7 +8,7 @@ import {
   ascendingOrderByKeyWithMissingKey,
 } from "./array-sort";
 
-describe.skip("alphabeticalOrder", () => {
+describe("alphabeticalOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(alphabeticalOrder([])).toEqual([]);
   });
