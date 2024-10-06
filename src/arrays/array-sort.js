@@ -23,7 +23,9 @@ reverseAlphabeticalOrder(["dog", "wolf", "by", "family", "eaten", "camping", ""]
 reverseAlphabeticalOrder([]); // []
 */
 
-export const reverseAlphabeticalOrder = (stringsArray) => {};
+export const reverseAlphabeticalOrder = (stringsArray) => {
+  return stringsArray.sort().reverse();
+};
 
 // 3. create a function that takes an array of numbers and return sorted in ascending order
 // the input is an array of numbers (integers)

@@ -23,7 +23,7 @@ describe("alphabeticalOrder", () => {
   });
 });
 
-describe.skip("reverseAlphabeticalOrder", () => {
+describe("reverseAlphabeticalOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(reverseAlphabeticalOrder([])).toEqual([]);
   });
