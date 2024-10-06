@@ -53,7 +53,6 @@ describe.skip("reverseAlphabeticalOrder", () => {
   });
 });
 
-describe("ascendingOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(ascendingOrder([])).toEqual([]);
   });
@@ -65,7 +64,7 @@ describe("ascendingOrder", () => {
       1, 2, 3, 4, 11, 22, 33, 44,
     ]);
   });
-});
+;
 
 describe.skip("descendingOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
