@@ -38,7 +38,9 @@ ascendingOrder([1, 2, 3, 4]); // [1, 2, 3, 4]
 ascendingOrder([]); // []
 */
 
-export const ascendingOrder = (numbersArray) => {};
+export const ascendingOrder = (numbersArray) => {
+  return numbersArray.sort((a, b) => a - b);
+};
 // 4. create a function that takes an array of numbers and return sorted in descending order
 // the input is an array of numbers (integers)
 // the function should return an array of numbers sorted in descending order
