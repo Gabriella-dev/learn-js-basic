@@ -66,7 +66,7 @@ describe("reverseAlphabeticalOrder", () => {
   });
 ;
 
-describe.skip("descendingOrder", () => {
+describe("descendingOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(descendingOrder([])).toEqual([]);
   });

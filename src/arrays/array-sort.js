@@ -53,7 +53,9 @@ descendingOrder([1, 2, 3, 4]); // [4, 3, 2, 1]
 descendingOrder([]); // []
 */
 
-export const descendingOrder = (numbersArray) => {};
+export const descendingOrder = (numbersArray) => {
+  return numbersArray.sort((a, b) => b - a);
+};
 
 // 5. create a function that takes an array of objects and return sorted by a key in ascending order
 // the input is an array of objects
