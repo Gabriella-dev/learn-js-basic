@@ -111,7 +111,10 @@ descendingOrderByKey(
 descendingOrderByKey([], "age"); // []
 */
 
-export const descendingOrderByKey = (objectsArray, key) => {};
+export const descendingOrderByKey = (objectsArray, key) => {
+  const descendingOrder = objectsArray.sort((a, b) => b.age - a.age);
+  return descendingOrder;
+};
 // 7. create a function that takes an array of objects and return sorted by a key in ascending order
 // if the key is not present in one of the objects, it should be at the end
 // the input is an array of objects

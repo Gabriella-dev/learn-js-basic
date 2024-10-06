@@ -109,7 +109,7 @@ describe("ascendingOrderByKey", () => {
   });
 });
 
-describe.skip("descendingOrderByKey", () => {
+describe("descendingOrderByKey", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(descendingOrderByKey([], "age")).toEqual([]);
   });
