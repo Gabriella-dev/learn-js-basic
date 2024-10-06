@@ -25,7 +25,7 @@ describe("stringifyNumbers", () => {
   });
 });
 
-describe.skip("capitalizeNames", () => {
+describe("capitalizeNames", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(capitalizeNames([])).toEqual([]);
   });
