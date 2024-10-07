@@ -30,7 +30,11 @@ const voters = [
 voterResults(voters); // 2
 */
 
-export const voterResults = (voters) => {};
+export const voterResults = (voters) => {
+  const votersNum = voters.reduce((count, voter) => count + voter.voted, 0);
+
+  return votersNum;
+};
 
 // 3. Write a function that takes an array of arrays and returns an array of the sums of each inner array:
 // the input is an array of arrays

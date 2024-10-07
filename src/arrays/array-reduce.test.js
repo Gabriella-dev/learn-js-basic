@@ -17,7 +17,7 @@ describe("sum", () => {
   });
 });
 
-describe.skip("voterResults", () => {
+describe("voterResults", () => {
   test("should return the number of voters who voted", () => {
     const voters = [
       { name: "Bob", voted: true },
