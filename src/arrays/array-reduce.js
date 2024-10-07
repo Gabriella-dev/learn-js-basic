@@ -12,7 +12,10 @@ sum([2, 5, 100]); // 107
 sum([2, 5, 100, 0]); // 107
 sum([]); // 0
 */
-export const sum = (numbersArray) => {};
+export const sum = (numbersArray) => {
+  const sumOfArrays = numbersArray.reduce((acc, current) => acc + current, 0);
+  return sumOfArrays;
+};
 
 // 2. Write a function that takes an array of voter objects and a count of how many people voted:
 // the input is an array of voter objects

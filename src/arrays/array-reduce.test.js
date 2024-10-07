@@ -6,7 +6,7 @@ import {
   voterTurnout,
 } from "./array-reduce";
 
-describe.skip("sum", () => {
+describe("sum", () => {
   test("should return the sum of all numbers in the array", () => {
     expect(sum([2, 5, 100])).toBe(107);
     expect(sum([2, 5, 100, 0])).toBe(107);

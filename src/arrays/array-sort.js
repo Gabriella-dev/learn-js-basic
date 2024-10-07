@@ -155,4 +155,4 @@ ascendingOrderByKey(
 ascendingOrderByKey([], "age"); // []
 */
 
-export const ascendingOrderByKeyWithMissingKey = {};
+export const ascendingOrderByKeyWithMissingKey = () => {};
