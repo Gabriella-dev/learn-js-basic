@@ -42,7 +42,7 @@ describe("voterResults", () => {
   });
 });
 
-describe.skip("sumOfArrays", () => {
+describe("sumOfArrays", () => {
   test("should return an array of the sums of each inner array", () => {
     expect(
       sumOfArrays([

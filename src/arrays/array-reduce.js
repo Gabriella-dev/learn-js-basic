@@ -47,7 +47,9 @@ sumOfArrays([[1, 2, 3], [4, 5, 6]]); // [6, 15]
 
 //hint: using map and above sum function
 
-export const sumOfArrays = (arrays) => {};
+export const sumOfArrays = (arrays) => {
+  return arrays.map((x) => sum(x));
+};
 
 // 4. Given an array of all your wishlist items, figure out how much it would cost to just buy everything at once:
 // the input is an array of objects
