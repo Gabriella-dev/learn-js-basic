@@ -60,7 +60,7 @@ describe("sumOfArrays", () => {
   });
 });
 
-describe.skip("shoppingSpree", () => {
+describe("shoppingSpree", () => {
   test("should return the total cost of all items", () => {
     const wishlist = [
       { title: "Tesla Model S", price: 90000 },

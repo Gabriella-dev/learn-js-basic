@@ -67,7 +67,11 @@ const wishlist = [
     shoppingSpree(wishlist); // 225005
 */
 
-export const shoppingSpree = (wishlist) => {};
+export const shoppingSpree = (wishlist) => {
+  const total = wishlist.reduce((acc, curr) => acc + curr.price, 0);
+
+  return total;
+};
 
 // 5. Given an array of potential voters, return an object representing the results of the vote
 // Include how many of the potential voters were in the ages 18-25, how many from 26-35, how many from 36-55, and how many of each of those age ranges actually voted. The resulting object containing this data should have 6 properties. See the example output at the bottom.
