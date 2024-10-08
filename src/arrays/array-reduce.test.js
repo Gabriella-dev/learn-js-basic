@@ -78,7 +78,7 @@ describe("shoppingSpree", () => {
   });
 });
 
-describe.skip("voterTurnout", () => {
+describe("voterTurnout", () => {
   test("should return an object with the correct number of voters in each age range and the number of voters who voted", () => {
     const voters = [
       { name: "Bob", age: 30, voted: true },

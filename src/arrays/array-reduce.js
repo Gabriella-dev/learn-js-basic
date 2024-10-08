@@ -108,4 +108,35 @@ const voters = [
     numOldsPeople: 4 }
 */
 
-export const voterTurnout = (voters) => {};
+export const voterTurnout = (voters) => {
+  const result = voters.reduce(
+    (acc, cur) => {
+      if (cur.age >= 18 && cur.age <= 25) {
+        acc.numYoungPeople += 1;
+        if (cur.voted === true) {
+          acc.numYoungVotes += 1;
+        }
+      } else if (cur.age >= 26 && cur.age <= 35) {
+        acc.numMidsPeople += 1;
+        if (cur.voted === true) {
+          acc.numMidVotesPeople += 1;
+        }
+      } else if (cur.age >= 36) {
+        acc.numOldsPeople += 1;
+        if (cur.voted === true) {
+          acc.numOldVotesPeople += 1;
+        }
+      }
+      return acc;
+    },
+    {
+      numYoungVotes: 0,
+      numYoungPeople: 0,
+      numMidVotesPeople: 0,
+      numMidsPeople: 0,
+      numOldVotesPeople: 0,
+      numOldsPeople: 0,
+    }
+  );
+  return result;
+};
