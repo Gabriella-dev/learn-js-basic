@@ -13,8 +13,7 @@ doubleNumbers([2, 5, 100, 0]); // [4, 10, 200, 0]
 */
 
 export const doubleNumbers = (input) => {
-  if (input.length === 0) return [];
-  return input.map((elem) => elem * 2);
+  return input === 0 ? [] : input.map((n) => n * 2);
 };
 
 // 2. write a function that Take an array of numbers and make them strings
@@ -27,8 +26,7 @@ stringifyNumbers([2, 5, 100]); // ['2', '5', '100']
 */
 
 export const stringifyNumbers = (input) => {
-  if (input === 0) return [];
-  return input.map(String);
+  return input === 0 ? [] : input.map((num) => num.toString());
 };
 
 // 3. you have an array of students objects, each object has a name property and age property write a function that Capitalize each first letter in the name of the students

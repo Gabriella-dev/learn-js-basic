@@ -8,7 +8,7 @@ import {
   ascendingOrderByKeyWithMissingKey,
 } from "./array-sort";
 
-describe.skip("alphabeticalOrder", () => {
+describe("alphabeticalOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(alphabeticalOrder([])).toEqual([]);
   });
@@ -23,7 +23,7 @@ describe.skip("alphabeticalOrder", () => {
   });
 });
 
-describe.skip("reverseAlphabeticalOrder", () => {
+describe("reverseAlphabeticalOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(reverseAlphabeticalOrder([])).toEqual([]);
   });
@@ -53,7 +53,6 @@ describe.skip("reverseAlphabeticalOrder", () => {
   });
 });
 
-describe.skip("ascendingOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(ascendingOrder([])).toEqual([]);
   });
@@ -65,9 +64,9 @@ describe.skip("ascendingOrder", () => {
       1, 2, 3, 4, 11, 22, 33, 44,
     ]);
   });
-});
+;
 
-describe.skip("descendingOrder", () => {
+describe("descendingOrder", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(descendingOrder([])).toEqual([]);
   });
@@ -81,7 +80,7 @@ describe.skip("descendingOrder", () => {
   });
 });
 
-describe.skip("ascendingOrderByKey", () => {
+describe("ascendingOrderByKey", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(ascendingOrderByKey([], "age")).toEqual([]);
   });
@@ -110,7 +109,7 @@ describe.skip("ascendingOrderByKey", () => {
   });
 });
 
-describe.skip("descendingOrderByKey", () => {
+describe("descendingOrderByKey", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(descendingOrderByKey([], "age")).toEqual([]);
   });
