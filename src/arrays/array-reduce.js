@@ -61,7 +61,7 @@ const wishlist = [
     {title: 'Tesla Model S', price: 90000},
     {title: '4 carat diamond ring', price: 45000},
     {title: 'Fancy hacky Sack', price: 5},
-    {title: 'Gold fidgit spinner', price: 2000},
+    {title: 'Gold fidget spinner', price: 2000},
     {title: 'A second Tesla Model S', price: 90000}
     ];
     shoppingSpree(wishlist); // 225005
@@ -96,7 +96,7 @@ const voters = [
     {name: 'Becky' , age: 43, voted: false},
     {name: 'Joey' , age: 41, voted: true},
     {name: 'Jeff' , age: 30, voted: true},
-    {name: 'Zack' , age: 19, voted: false}
+    {name: 'zach' , age: 19, voted: false}
     ];
 
     voterTurnout(voters) returns:
