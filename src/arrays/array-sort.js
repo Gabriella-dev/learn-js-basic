@@ -157,6 +157,5 @@ ascendingOrderByKey([], "age"); // []
 
 export const ascendingOrderByKeyWithMissingKey = (x) => {
   const missing = x.sort((a, b) => a.age - b.age);
-  console.log({ missing });
   return x === 0 ? [] : missing;
 };
