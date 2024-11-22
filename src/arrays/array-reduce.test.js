@@ -6,7 +6,7 @@ import {
   voterTurnout,
 } from "./array-reduce";
 
-describe.skip("sum", () => {
+describe("sum", () => {
   test("should return the sum of all numbers in the array", () => {
     expect(sum([2, 5, 100])).toBe(107);
     expect(sum([2, 5, 100, 0])).toBe(107);
@@ -17,7 +17,7 @@ describe.skip("sum", () => {
   });
 });
 
-describe.skip("voterResults", () => {
+describe("voterResults", () => {
   test("should return the number of voters who voted", () => {
     const voters = [
       { name: "Bob", voted: true },
@@ -42,7 +42,7 @@ describe.skip("voterResults", () => {
   });
 });
 
-describe.skip("sumOfArrays", () => {
+describe("sumOfArrays", () => {
   test("should return an array of the sums of each inner array", () => {
     expect(
       sumOfArrays([
@@ -60,13 +60,13 @@ describe.skip("sumOfArrays", () => {
   });
 });
 
-describe.skip("shoppingSpree", () => {
+describe("shoppingSpree", () => {
   test("should return the total cost of all items", () => {
     const wishlist = [
       { title: "Tesla Model S", price: 90000 },
       { title: "4 carat diamond ring", price: 45000 },
       { title: "Fancy hacky Sack", price: 5 },
-      { title: "Gold fidgit spinner", price: 2000 },
+      { title: "Gold fidget spinner", price: 2000 },
       { title: "A second Tesla Model S", price: 90000 },
     ];
     expect(shoppingSpree(wishlist)).toBe(227005);
@@ -78,7 +78,7 @@ describe.skip("shoppingSpree", () => {
   });
 });
 
-describe.skip("voterTurnout", () => {
+describe("voterTurnout", () => {
   test("should return an object with the correct number of voters in each age range and the number of voters who voted", () => {
     const voters = [
       { name: "Bob", age: 30, voted: true },

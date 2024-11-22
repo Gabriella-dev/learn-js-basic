@@ -6,7 +6,7 @@ import {
   counterSpy,
 } from "./array-filter";
 
-describe.skip("evenNumbers", () => {
+describe("evenNumbers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(evenNumbers([])).toEqual([]);
   });
@@ -17,7 +17,7 @@ describe.skip("evenNumbers", () => {
   });
 });
 
-describe.skip("shortStrings", () => {
+describe("shortStrings", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(shortStrings([])).toEqual([]);
   });
@@ -32,7 +32,7 @@ describe.skip("shortStrings", () => {
   });
 });
 
-describe.skip("olderThan18", () => {
+describe("olderThan18", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(olderThan18([])).toEqual([]);
   });
@@ -56,7 +56,7 @@ describe.skip("olderThan18", () => {
   });
 });
 
-describe.skip("clubMembers", () => {
+describe("clubMembers", () => {
   test("should return an empty array if the input is an empty array", () => {
     expect(clubMembers([])).toEqual([]);
   });
